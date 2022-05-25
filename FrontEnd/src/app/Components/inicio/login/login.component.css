@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-login{
+    background-color: #f05f44;
+    border-color: #f05f44;
+}

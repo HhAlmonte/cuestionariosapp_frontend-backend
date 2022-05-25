@@ -1,0 +1,29 @@
+p{font-family: 'Oswald', sans-serif; font-size: 2.3em;color: #ffff;}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* hr{
+    border-width: 3px;
+    max-width: 65%;
+    color: #f05f44;
+    background-color: #f05f44;
+} */
+
+.btn-xl{
+    background-color: #f05f44;
+    border-color: #f05f44;
+    margin: 10px;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+}
+
+.btn-xl:hover{
+    background-color: #EE4B08;
+    border-radius: #f05f44;
+    border-width: 4px;
+}

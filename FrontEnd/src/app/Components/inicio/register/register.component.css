@@ -1,0 +1,31 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-family:'Oswald', sans-serif;;
+}
+
+.btn-register{
+    background-color: #f05f44;
+    border-color: #f05f44;
+}
+
+.row{
+    width: 100%;
+}
+
+.card{
+    padding: 20px;
+}
+
+.mb-3{
+    text-align: start;
+}
+
+.mb-btn{
+    padding-top: 10px;
+}

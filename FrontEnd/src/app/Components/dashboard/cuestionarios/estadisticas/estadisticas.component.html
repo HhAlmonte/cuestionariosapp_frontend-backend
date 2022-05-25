@@ -1,0 +1,33 @@
+<div class="text-center">
+    <app-loading *ngIf="loading"></app-loading>
+</div>
+
+<table class="table sm table-over" style="margin-top:  20px ;" *ngIf="listRespuestaCuestionario.length > 0 && loading == false">
+    <thead>
+        <th>Participante</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cuestionarioRespuesta of listRespuestaCuestionario && listRta">
+            <td>{{cuestionarioRespuesta.nombreParticipante | uppercase}}</td>
+            <td>{{cuestionarioRespuesta.fecha | date: 'dd/MM/yyyy'}}</td>
+            <td>{{cuestionarioRespuesta.fecha | date: 'HH:mm'}}</td>
+            <td>
+                <div class="float-rigth">
+                    <span class="material-symbols-outlined add-icon search-icon" routerLink="/dashboard/detalleRespuesta/{{cuestionarioRespuesta.id}}">
+                        search
+                    </span>
+                    <span class="material-symbols-outlined add-icon delete-icon" (click)="eliminarRespuestaCuestionario(cuestionarioRespuesta.id)">
+                        delete
+                    </span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 *ngIf="listRespuestaCuestionario.length == 0 && loading == false" style="margin-top:  20px ;">
+    Aún no hay respuestas para este cuestionario
+</h3>

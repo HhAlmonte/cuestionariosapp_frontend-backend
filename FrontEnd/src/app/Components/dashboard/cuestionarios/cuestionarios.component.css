@@ -1,0 +1,22 @@
+.bg-color{
+  background-color: #DDDDDD;
+}
+
+.jumbotron {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: .3rem;  
+}
+
+.btn-cues{
+    padding: 1rem 2rem;
+    border-radius: 300px;
+}
+
+.radius{
+  width: 100px;
+  border-radius: 300px;
+  margin-left: 10px;
+  color: white;
+}

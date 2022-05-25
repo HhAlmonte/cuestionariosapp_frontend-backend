@@ -1,0 +1,31 @@
+<div class="text-center" style="margin-top: 20px ;">
+    <app-loading *ngIf="loading"></app-loading>
+</div>
+
+<div class="text-center" *ngIf="cuestionario != null" style="margin-top: 20px ;">
+    <h4 class="card-title">{{cuestionario.nombre | uppercase}}</h4>
+    <p class="card-text">{{cuestionario.descripcion | uppercase}}</p>
+    <hr>
+    <div *ngFor="let pregunta of cuestionario.listPregunta; let i = index" style="margin-bottom: 10px;">
+        <div class="card-header">
+            <b>{{pregunta.descripcion}}</b>
+        </div>
+        <ul class="list-group" *ngFor="let respuesta of pregunta.listRespuesta">
+            <li class="list-group-item" [ngClass]="{'list-group-item-success': respuesta.esCorrecta == true && respuestas[i].respuestaId == respuesta.id,
+                                                     'list-group-item-danger': respuesta.esCorrecta == false  && respuestas[i].respuestaId == respuesta.id}">
+                {{respuesta.descripcion}}
+                <span class="material-symbols-outlined add-icon correct" *ngIf="respuesta.esCorrecta == true && respuestas[i].respuestaId == respuesta.id">
+                    check_circle
+                </span>
+                <span class="material-symbols-outlined add-icon incorrect" *ngIf="respuesta.esCorrecta == false && respuestas[i].respuestaId == respuesta.id">
+                    highlight_off
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="row" style="margin-bottom: 20px ;">
+        <div class="col-lg-4 offset-lg-4">
+            <button class="btn btn-primary btn-lg col-12" routerLink="/dashboard/estadistica/{{cuestionario.id}}">Volver</button>
+        </div>
+    </div>
+</div>
