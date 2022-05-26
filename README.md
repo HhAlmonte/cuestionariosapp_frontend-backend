@@ -16,8 +16,10 @@ BackEnd:
   * Entre otras cosas
 
 Algunas cosas fueron omitidas o cambiadas para su publicación en gitHub: 
+
   *Para la utilización del FrontEnt haga lo siguiente:
-        - Vaya a la consola => ponga <<npm install>> y espere a la descarga
+        - Vaya a la consola => ponga "npm install" y espere a la descarga
+        
   *Para la utilizacion de BackEnd haga lo siguiente:
         - Vaya a <<appsettings.json>> y ponga sus credenciales y actualice el "jwt" a su gusto.
   
