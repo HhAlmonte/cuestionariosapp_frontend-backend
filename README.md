@@ -1,7 +1,7 @@
 # CuestionariosApp
 # Versión 1.0
 
-Este repositorio es sobre una aplicación de cuestionarios o encuestas. Este repositorio está dividido entre dos partes, FrontEnd y BackEnd.
+Este repositorio es sobre una aplicación de cuestionarios o encuestas. Este repositorio está dividido entre dos partes: FrontEnd y BackEnd.
 
 FrontEnd : 
   * fue desarrollado con una arquitectura mvvm
